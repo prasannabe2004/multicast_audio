@@ -67,6 +67,9 @@ int main() {
             printf("Received packet %d, %d bytes (total: %d bytes)\n", packet_count, bytes_received, total_bytes_received);
             fwrite(buffer, bytes_received, 1, output_file);
         }
+        else {
+            break;
+        }
     }
     fclose(output_file);
     close(sock);
