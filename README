@@ -1,0 +1,2 @@
+gcc recevier.c -o recevier -lasound
+gcc sender.c -o sender
